@@ -25,7 +25,7 @@ body {
 /* Start Wrapper */ 
 
 header {
-  margin: 3rem 0rem;
+  margin: 4rem 0rem;
 }
 
 .title {
@@ -192,6 +192,10 @@ header {
   .subscribe__btn {
     width: 100%;
     margin: 1.5rem 0rem;
+  }
+
+  .page-img img {
+    width: 100%;
   }
 
 }
