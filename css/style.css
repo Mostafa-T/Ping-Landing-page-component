@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+/* 
+  ===================
+    CSS INDEX
+  ===================
+
+  --  Global style
+  --  page
+  --  Media Queries 
+  --  custom Framework
+*/
+
+/* Start Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+/* End Global Styling */
+
+/* Start Wrapper */ 
+
+header {
+  margin: 3rem 0rem;
+}
+
+.title {
+  margin: 1rem 0rem;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.title h1 span {
+  font-weight: 600;
+  color: hsl(209, 33%, 12%);
+}
+
+
+.subscribe form{
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0rem;
+}
+.subsribe__validation {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  bottom: -2rem;
+  left: 1rem;
+
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  font-weight: 600;
+  font-size: .8rem ;
+}
+/* .error.active {
+  visibility: visible;
+  opacity: 1;
+} */
+.subscribe__input {
+  min-width: 350px;
+  max-width: 100%;
+  padding: 1rem ;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 30px;
+}
+.subscribe__input::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+.subscribe__input.active {
+  border-color:hsl(354, 100%, 66%);
+}
+
+.subscribe__btn {
+  cursor: pointer;
+  min-width: 170px;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  font-weight: 600;
+  margin-left: 1rem;
+  box-shadow: 0px 0px 5px hsl(223, 87%, 63%);
+  transition: .2s;
+}
+
+.subscribe__btn:hover {
+  background-color: hsl(223, 100%, 88%);
+  box-shadow: 0px 0px 5px hsl(223, 100%, 88%);
+}
+.page-img {
+  margin: 4rem 0rem;
+}
+.page-img img {
+  width: 50%;
+  margin: auto;
+}
+.footer {
+  margin: 2rem 0rem;
+}
+.footer__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+
+.footer__social > li > a {
+
+  display: block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  margin: 0rem .5rem;
+  color: hsl(223, 87%, 63%);
+  transition: .3s ease-in-out;
+}
+
+.footer__social a:hover {
+  background-color:  hsl(223, 87%, 63%);
+  color: #fff;
+}
+
+.footer span {
+  color: hsl(0, 0%, 59%);
+}
+/* End Wrapper */ 
+
+/* Start custom Framework */
+.container {
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+/* End custom Framework */
+
+
+/* Start Media Queries */
+@media (max-width: 767px) {
+  .subscribe form {
+    flex-direction: column;
+  }
+  .subscribe__input {
+    width: 100%;
+  }
+  .error {
+    left: 0;
+    right: 0;
+    bottom: -1.2rem;
+    margin: auto;
+  }
+  .subscribe__btn {
+    width: 100%;
+    margin: 1.5rem 0rem;
+  }
+
+}
+/* End Media Queries */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
